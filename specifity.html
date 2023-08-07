@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        #third{
+            color: firebrick;
+        }
+        .fire{
+            color: red;
+        }
+        h1{
+            color: peru !important;
+            color: aqua;
+        }
+        h1{
+            color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <h1>My special heading-1</h1>
+    <h1>My special heading-2</h1>
+    <h1 style="color: black;" class="fire" id="third">My special heading-3</h1>
+    <h1>My special heading-4</h1>
+</body>
+</html>
